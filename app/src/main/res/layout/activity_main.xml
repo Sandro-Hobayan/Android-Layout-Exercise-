@@ -8,7 +8,7 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/td_name"
+        android:id="@+id/tv_name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Hello my name is Alesandro Hobayan"
@@ -20,24 +20,27 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/td_description"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="I'm 22 Years old and currently studying BSIT 3rd Year in College, my hobbies is playing games and sketching, and also I'm doing my activity right now."
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:textSize="30dp"
-        android:layout_below="@id/td_name"
-        />
-
-    <Button
+        android:id="@+id/tv_description"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/td_description"
+        android:text="I'm 22 Years old and currently studying BSIT 3rd Year in College, my hobbies is playing games and sketching, and also I'm doing my activity right now."
+        android:layout_below="@+id/tv_name"
+        android:textSize="30dp"
+        />
+    <Button
+        android:id="@+id/btnClick"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:hint="Click me!"
         android:textColorHint="white"
+        android:layout_below="@id/tv_description"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Copyright C paano ung c na may bilog? 2024"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
         />
 
 </RelativeLayout>
